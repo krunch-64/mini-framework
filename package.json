@@ -1,0 +1,19 @@
+{
+  "name": "mini-framework",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./assets/scss/input.scss:./assets/css/output.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/krunch-64/mini-framework.git"
+  },
+  "author": "le plus bg",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/krunch-64/mini-framework/issues"
+  },
+  "homepage": "https://github.com/krunch-64/mini-framework#readme"
+}
