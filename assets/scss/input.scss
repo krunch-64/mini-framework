@@ -1,78 +1,89 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
-@import 'variable';
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
+@import "variable";
 
 .card {
-    @include mobile {
-        --width-card: 300px;
-        --height-card: 400px;
-      }
-    @include tablet {
-        --width-card: 400px;
-        --height-card: 500px;
-      }
-      @include desktop {
-        --width-card: 500px;
-        --height-card: 600px;
-      }
-  
+  @include mobile {
+    --width-card: 300px;
+    --height-card: 400px;
+  }
+  @include tablet {
+    --width-card: 400px;
+    --height-card: 500px;
+  }
+  @include desktop {
+    --width-card: 300px;
+    --height-card: 600px;
+  }
 }
 
-
-// police d'écriture 
+// police d'écriture
 body {
-    font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
 }
 
 // paramétre de la carte
-.card{
+.card {
+  width: var(--width-card);
+  height: var(--height-card);
+  box-shadow: 0px 5px 5px gray;
+  display: flex;
+  flex-direction: column;
+
+  .card-img {
     width: var(--width-card);
-    height: var(--height-card);
-    box-shadow: 0px 5px 5px gray;
+  }
 
-    .card-img{
-        width: var(--width-card);
-    }
-    
-    .card-title , .card-text , .btn{
-        display: flex;    
-        justify-content: center;
-    }
-
+  .card-title,
+  .card-text,
+  .btn {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 // Bouton
 .btn {
-    border: 0px;
-    border-radius: 15px;
+  border: 0px;
+  border-radius: 15px;
+  padding: var(--paddingbtn);
+
+  &:hover {
+    background-color: var(--backgroundcolorhover);
+  }
+
+  &__primary {
+    background-color: var(--backgroundcolor, white);
     padding: var(--paddingbtn);
-
     &:hover {
-        background-color: var(--backgroundcolorhover);
+      background-color: var(--backgroundcolorhover);
+      color: white;
     }
-
-    &__primary {
-        background-color: var(--backgroundcolor, white);
-        padding: var(--paddingbtn);
-        &:hover {
-            background-color: var(--backgroundcolorhover);
-            color: white;
-        }
+  }
+  &__secondary {
+    background-color: var(--backgroundcolor, white);
+    padding: var(--paddingbtn);
+    &:hover {
+      background-color: var(--backgroundcolorhover);
+      color: white;
     }
-    &__secondary {
-        background-color: var(--backgroundcolor, white);
-        padding: var(--paddingbtn);
-        &:hover {
-            background-color: var(--backgroundcolorhover);
-            color: white;
-        }
-    }
+  }
 }
 
 // Taille des boutons gros et petit
 .btn-big {
-    padding: var(--paddingbtn);
+  padding: var(--paddingbtn);
 }
 .btn-small {
-    padding: var(--paddingbtn);
+  padding: var(--paddingbtn);
 }
 
+// Grid //
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 5px;
+  grid-row-gap: 0px;
+  grid-auto-flow: row;
+  
+}
