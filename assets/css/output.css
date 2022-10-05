@@ -1,5 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
 :root .btn {
-  --paddingbtn: 5px;
+  --paddingbtn: 7px;
   --backgroundcolorhover: rgb(190, 190, 190);
 }
 :root .btn__primary {
@@ -19,19 +20,45 @@
   --paddingbtn: 10px;
 }
 
+body {
+  font-family: "Ubuntu", sans-serif;
+}
+
+.card {
+  width: var(--width-card);
+  height: var(--height-card);
+  box-shadow: 0px 5px 5px gray;
+  text-align: center;
+}
+.card .card-img {
+  width: var(--width-card);
+}
+@media screen and (max-width: 600px) {
+  .card {
+    --width-card: 300px;
+    --height-card: 400px;
+  }
+}
+@media screen and (min-width: 600px) {
+  .card {
+    --width-card: 400px;
+    --height-card: 500px;
+  }
+}
+@media screen and (min-width: 800px) {
+  .card {
+    --width-card: 500px;
+    --height-card: 600px;
+  }
+}
+
 .btn {
-  border: 0px;
+  text-decoration: none;
+  color: #000000;
   border-radius: 15px;
   padding: var(--paddingbtn);
 }
 .btn:hover {
-  background-color: var(--backgroundcolorhover);
-}
-.btn__primary {
-  background-color: var(--backgroundcolor, white);
-  padding: var(--paddingbtn);
-}
-.btn__primary:hover {
   background-color: var(--backgroundcolorhover);
   color: white;
 }
@@ -50,6 +77,15 @@
 
 .btn-small {
   padding: var(--paddingbtn);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 5px;
+  grid-row-gap: 0px;
+  grid-auto-flow: row;
 }
 
 /*# sourceMappingURL=output.css.map */

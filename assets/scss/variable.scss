@@ -1,6 +1,14 @@
+$white: #fff;
+$black: #000000;
+$blue: #0000FF;
+$green: #008000;
+$red: #FF0000;
+$breakpoints-desktop: 800px;
+$breakpoints-tablet: 600px;
+$breakpoints-mobile: 600px;
 :root {
     .btn {
-        --paddingbtn: 5px;
+        --paddingbtn: 7px;
         --backgroundcolorhover: rgb(190, 190, 190);
     }
     .btn__primary {
@@ -18,5 +26,24 @@
     }
     .btn-small {
         --paddingbtn: 10px;
+    }
+}
+
+//les breakpoints
+@mixin desktop {
+    @media screen and (min-width: $breakpoints-desktop) {
+      @content
+    }
+};
+
+@mixin tablet {
+    @media screen and (min-width: $breakpoints-tablet) {
+      @content
+    }
+};
+
+@mixin mobile {
+    @media screen and (max-width:$breakpoints-mobile) {
+      @content
     }
 }
