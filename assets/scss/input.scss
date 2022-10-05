@@ -1,7 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
 @import 'variable';
 
-.card {
+// police d'écriture 
+body {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+// paramétre de la carte
+.card{
+    width: var(--width-card);
+    height: var(--height-card);
+    box-shadow: 0px 5px 5px gray;
+    text-align:center;
+
+    // gestion de la taille d'image en fonction de la largeur de la carte
+    .card-img{
+        width: var(--width-card);
+    }
+    
+    // média query de la card
     @include mobile {
         --width-card: 300px;
         --height-card: 400px;
@@ -17,32 +34,10 @@
   
 }
 
-
-// police d'écriture 
-body {
-    font-family: 'Ubuntu', sans-serif;
-}
-
-// paramétre de la carte
-.card{
-    width: var(--width-card);
-    height: var(--height-card);
-    box-shadow: 0px 5px 5px gray;
-
-    .card-img{
-        width: var(--width-card);
-    }
-    
-    .card-title , .card-text , .btn{
-        display: flex;    
-        justify-content: center;
-    }
-
-}
-
 // Bouton
 .btn {
-    border: 0px;
+    text-decoration: none;
+    color:$black;
     border-radius: 15px;
     padding: var(--paddingbtn);
 
