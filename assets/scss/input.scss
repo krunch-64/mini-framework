@@ -32,12 +32,11 @@ body {
   .card-img {
     width: var(--width-card);
     height: auto;
-    overflow: hidden;
     max-width: var(--width-card);
     height: auto;
     overflow: hidden;
   }
-  .card-text , .card-title{
+  .card-text , .card-title , .grid-card{
     word-wrap: break-word;
 }
 
@@ -92,6 +91,8 @@ $grid-columuns: 12;
     box-shadow: 0px 5px 5px gray;
     text-align: center;
     text-decoration: none;
+    height: auto;
+    overflow: hidden;
 }
 
 // les couleurs
