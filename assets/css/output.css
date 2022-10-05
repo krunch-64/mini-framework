@@ -144,4 +144,25 @@ body {
   text-decoration: none;
 }
 
+.red {
+  background-color: #FF0000;
+}
+
+.green {
+  background-color: #008000;
+}
+
+.blue {
+  background-color: #0000FF;
+}
+
+.black {
+  background-color: #000000;
+  color: #fff;
+}
+
+.white {
+  background-color: #fff;
+}
+
 /*# sourceMappingURL=output.css.map */

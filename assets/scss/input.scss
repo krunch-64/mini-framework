@@ -72,6 +72,7 @@ body {
   padding: var(--paddingbtn);
 }
 
+// la boucle
 $grid-columuns: 12;
 
 @for $i from 1 through $grid-columuns {
@@ -84,4 +85,27 @@ $grid-columuns: 12;
     box-shadow: 0px 5px 5px gray;
     text-align: center;
     text-decoration: none;
+}
+
+// les couleurs
+
+.red {
+    background-color: $red;
+}
+
+.green {
+    background-color: $green;
+}
+
+.blue {
+    background-color: $blue;
+}
+
+.black {
+    background-color: $black;
+    color: $white;
+}
+
+.white {
+    background-color: $white;
 }
