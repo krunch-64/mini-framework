@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
 :root .btn {
-  --paddingbtn: 5px;
+  --paddingbtn: 7px;
   --backgroundcolorhover: rgb(190, 190, 190);
 }
 :root .btn__primary {
