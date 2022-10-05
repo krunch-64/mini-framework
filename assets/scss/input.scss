@@ -1,5 +1,9 @@
 @import 'variable.scss';
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
 
+body {
+    font-family: 'Ubuntu', sans-serif;
+}
 .card{
     width: 300px; // a changer avec la variable width
     height: 500px; // a changer avec la variable height
