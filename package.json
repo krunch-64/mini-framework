@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./assets/scss/input.scss:./assets/css/output.css"
+    "sass": "sass --watch ./assets/scss/input.scss:./assets/css/output.css",
+    "sasscomp": "sass --watch ./assets/scss/input.scss:./assets/css/output.css --style=compressed"
   },
   "repository": {
     "type": "git",
