@@ -34,6 +34,9 @@ body {
     height: auto;
     overflow: hidden;
   }
+  .card-text {
+    word-wrap: break-word;
+}
 }
 
 // Bouton
