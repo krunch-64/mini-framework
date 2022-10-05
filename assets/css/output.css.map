@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":[],"names":[],"mappings":"","file":"output.css"}
+{"version":3,"sourceRoot":"","sources":["../scss/input.scss","../scss/variable.scss"],"names":[],"mappings":"AAEA;EACI,OCDK;EDEL,QCFK","file":"output.css"}
