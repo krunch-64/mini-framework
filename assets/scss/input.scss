@@ -37,3 +37,13 @@
     padding: var(--paddingbtn);
 
 }
+//grid//
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 0px;
+    width: 1920px;
+    height: 1080px;
+    }
