@@ -1,12 +1,19 @@
+// On importe le fichier variable
 @import 'variable';
 
+
 .btn {
-    border: solid black 0px;
+    border: 0px;
     border-radius: 15px;
-    padding: 2%;
+    padding: var(--paddingbtn);
+
+    &:hover {
+        background-color: var(--backgroundcolorhover);
+    }
+
     &__primary {
         background-color: var(--backgroundcolor, white);
-
+        padding: var(--paddingbtn);
         &:hover {
             background-color: var(--backgroundcolorhover);
             color: white;
@@ -14,10 +21,18 @@
     }
     &__secondary {
         background-color: var(--backgroundcolor, white);
-
+        padding: var(--paddingbtn);
         &:hover {
             background-color: var(--backgroundcolorhover);
             color: white;
         }
     }
+}
+
+// Taille des boutons gros et petit
+.btn-big {
+    padding: var(--paddingbtn);
+}
+.btn-small {
+    padding: var(--paddingbtn);
 }
