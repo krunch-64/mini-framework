@@ -33,6 +33,9 @@ body {
     width: var(--width-card);
     height: auto;
     overflow: hidden;
+    max-width: var(--width-card);
+    height: auto;
+    overflow: hidden;
   }
   .card-text {
     word-wrap: break-word;
