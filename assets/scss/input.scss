@@ -1,12 +1,39 @@
+// On importe le fichier variable
 @import 'variable';
 
-.grid {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 1fr;
-    grid-column-gap: 10px;
-    grid-row-gap: 0px;
-    width: 1920px;
-    height: 1080px;
+// Bouton
+.btn {
+    border: 0px;
+    border-radius: 15px;
+    padding: var(--paddingbtn);
+
+    &:hover {
+        background-color: var(--backgroundcolorhover);
     }
-    
+
+    &__primary {
+        background-color: var(--backgroundcolor, white);
+        padding: var(--paddingbtn);
+        &:hover {
+            background-color: var(--backgroundcolorhover);
+            color: white;
+        }
+    }
+    &__secondary {
+        background-color: var(--backgroundcolor, white);
+        padding: var(--paddingbtn);
+        &:hover {
+            background-color: var(--backgroundcolorhover);
+            color: white;
+        }
+    }
+}
+
+// Taille des boutons gros et petit
+.btn-big {
+    padding: var(--paddingbtn);
+}
+.btn-small {
+    padding: var(--paddingbtn);
+
+}
