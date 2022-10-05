@@ -1,10 +1,22 @@
 :root {
+    .btn {
+        --paddingbtn: 5px;
+        --backgroundcolorhover: rgb(190, 190, 190);
+    }
     .btn__primary {
         --backgroundcolor: lightblue;
         --backgroundcolorhover: rgb(111, 185, 209);
+        --paddingbtn: 15px;
     }
     .btn__secondary {
         --backgroundcolor: rgb(146, 158, 156);
         --backgroundcolorhover: rgb(118, 128, 126);
+        --paddingbtn: 10px;
+    }
+    .btn-big {
+        --paddingbtn: 15px;
+    }
+    .btn-small {
+        --paddingbtn: 10px;
     }
 }
