@@ -1,0 +1,23 @@
+@import 'variable';
+
+.btn {
+    border: solid black 0px;
+    border-radius: 15px;
+    padding: 2%;
+    &__primary {
+        background-color: var(--backgroundcolor, white);
+
+        &:hover {
+            background-color: var(--backgroundcolorhover);
+            color: white;
+        }
+    }
+    &__secondary {
+        background-color: var(--backgroundcolor, white);
+
+        &:hover {
+            background-color: var(--backgroundcolorhover);
+            color: white;
+        }
+    }
+}
