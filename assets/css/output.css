@@ -34,7 +34,7 @@
 }
 @media screen and (min-width: 800px) {
   .card {
-    --width-card: 500px;
+    --width-card: 300px;
     --height-card: 600px;
   }
 }
@@ -47,11 +47,15 @@ body {
   width: var(--width-card);
   height: var(--height-card);
   box-shadow: 0px 5px 5px gray;
+  display: flex;
+  flex-direction: column;
 }
 .card .card-img {
   width: var(--width-card);
 }
-.card .card-title, .card .card-text, .card .btn {
+.card .card-title,
+.card .card-text,
+.card .btn {
   display: flex;
   justify-content: center;
 }
@@ -87,6 +91,15 @@ body {
 
 .btn-small {
   padding: var(--paddingbtn);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 5px;
+  grid-row-gap: 0px;
+  grid-auto-flow: row;
 }
 
 /*# sourceMappingURL=output.css.map */
