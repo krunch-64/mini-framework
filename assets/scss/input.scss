@@ -1,0 +1,18 @@
+@import 'variable.scss';
+
+.card{
+    width: 300px; // a changer avec la variable width
+    height: 500px; // a changer avec la variable height
+    box-shadow: 0px 5px 5px gray;
+
+    .card-img{
+        width: 300px; // a changer avec la variable width
+    }
+    
+    .card-title , .card-text , .btn{
+        display: flex;    
+        justify-content: center;
+    }
+
+}
+
