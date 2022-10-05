@@ -1,3 +1,30 @@
+:root .btn__primary {
+  --backgroundcolor: lightblue;
+  --backgroundcolorhover: rgb(111, 185, 209);
+}
+:root .btn__secondary {
+  --backgroundcolor: rgb(146, 158, 156);
+  --backgroundcolorhover: rgb(118, 128, 126);
+}
 
+.btn {
+  border: solid black 0px;
+  border-radius: 15px;
+  padding: 2%;
+}
+.btn__primary {
+  background-color: var(--backgroundcolor, white);
+}
+.btn__primary:hover {
+  background-color: var(--backgroundcolorhover);
+  color: white;
+}
+.btn__secondary {
+  background-color: var(--backgroundcolor, white);
+}
+.btn__secondary:hover {
+  background-color: var(--backgroundcolorhover);
+  color: white;
+}
 
 /*# sourceMappingURL=output.css.map */
