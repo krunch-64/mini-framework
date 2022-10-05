@@ -23,22 +23,19 @@ body {
 
 // paramétre de la carte
 .card {
-  width: var(--width-card);
-  height: var(--height-card);
-  box-shadow: 0px 5px 5px gray;
-  display: flex;
-  flex-direction: column;
+   width: var(--width-card);
+   height: var(--height-card);
+   box-shadow: 0px 5px 5px gray;
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   text-decoration: none;
 
   .card-img {
     width: var(--width-card);
   }
 
-  .card-title,
-  .card-text,
-  .btn {
-    display: flex;
-    justify-content: center;
-  }
+
 }
 
 // Bouton

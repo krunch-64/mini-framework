@@ -49,15 +49,11 @@ body {
   box-shadow: 0px 5px 5px gray;
   display: flex;
   flex-direction: column;
+  text-align: center;
+  text-decoration: none;
 }
 .card .card-img {
   width: var(--width-card);
-}
-.card .card-title,
-.card .card-text,
-.card .btn {
-  display: flex;
-  justify-content: center;
 }
 
 .btn {
