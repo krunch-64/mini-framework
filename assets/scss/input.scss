@@ -3,15 +3,18 @@
 
 body {
     background-color: $green;
-    @mixin media($width) {
-        @media only screen and (max-width: $width) {
-          @content;
-        }
+    @include tablet {
+        background-color: red;
       }
-    
-      @include media(700px) {
-        background: red;
+      
+      @include mobile {
+        background-color: rgb(60, 0, 128);
       }
+
+      @include desktop {
+        background-color: yellow;
+      }
+  
 }
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
 

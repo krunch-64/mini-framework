@@ -1,4 +1,10 @@
+$white: #fff;
+$black: #000000;
+$blue: #0000FF;
+$green: #008000;
+$red: #FF0000;
 
+$width: 1200px;
 
 :root {
     .btn {
@@ -21,12 +27,24 @@
     .btn-small {
         --paddingbtn: 10px;
     }
-$white: #fff;
-$black: #000000;
-$blue: #0000FF;
-$green: #008000;
-$red: #FF0000;
 
-$width: 1200px;
+}
+
+@mixin desktop {
+    @media screen and (min-width: 800px) {
+      @content
+    }
+};
+
+@mixin tablet {
+    @media screen and (min-width: 600px) {
+      @content
+    }
+};
+
+@mixin mobile {
+    @media screen and (min-width:320px) {
+      @content
+    }
 }
 
