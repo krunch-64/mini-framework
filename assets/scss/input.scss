@@ -11,7 +11,7 @@
     --height-card: 500px;
   }
   @include desktop {
-    --width-card: 300px;
+    --width-card: 500px;
     --height-card: 600px;
   }
 }
@@ -26,16 +26,14 @@ body {
    width: var(--width-card);
    height: var(--height-card);
    box-shadow: 0px 5px 5px gray;
-   display: flex;
-   flex-direction: column;
    text-align: center;
    text-decoration: none;
 
   .card-img {
     width: var(--width-card);
+    height: auto;
+    overflow: hidden;
   }
-
-
 }
 
 // Bouton
@@ -74,13 +72,16 @@ body {
   padding: var(--paddingbtn);
 }
 
-// Grid //
-.grid {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-column-gap: 5px;
-  grid-row-gap: 0px;
-  grid-auto-flow: row;
-  
+$grid-columuns: 12;
+
+@for $i from 1 through $grid-columuns {
+    .grid-card-#{$i} {
+        width: percentage($i/ $grid-columuns);
+    }
+}
+[class^='grid-card'] {
+    height: var(--height-card);
+    box-shadow: 0px 5px 5px gray;
+    text-align: center;
+    text-decoration: none;
 }

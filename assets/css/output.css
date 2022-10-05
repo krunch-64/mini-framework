@@ -34,7 +34,7 @@
 }
 @media screen and (min-width: 800px) {
   .card {
-    --width-card: 300px;
+    --width-card: 500px;
     --height-card: 600px;
   }
 }
@@ -47,13 +47,13 @@ body {
   width: var(--width-card);
   height: var(--height-card);
   box-shadow: 0px 5px 5px gray;
-  display: flex;
-  flex-direction: column;
   text-align: center;
   text-decoration: none;
 }
 .card .card-img {
   width: var(--width-card);
+  height: auto;
+  overflow: hidden;
 }
 
 .btn {
@@ -89,13 +89,59 @@ body {
   padding: var(--paddingbtn);
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-column-gap: 5px;
-  grid-row-gap: 0px;
-  grid-auto-flow: row;
+.grid-card-1 {
+  width: 8.3333333333%;
+}
+
+.grid-card-2 {
+  width: 16.6666666667%;
+}
+
+.grid-card-3 {
+  width: 25%;
+}
+
+.grid-card-4 {
+  width: 33.3333333333%;
+}
+
+.grid-card-5 {
+  width: 41.6666666667%;
+}
+
+.grid-card-6 {
+  width: 50%;
+}
+
+.grid-card-7 {
+  width: 58.3333333333%;
+}
+
+.grid-card-8 {
+  width: 66.6666666667%;
+}
+
+.grid-card-9 {
+  width: 75%;
+}
+
+.grid-card-10 {
+  width: 83.3333333333%;
+}
+
+.grid-card-11 {
+  width: 91.6666666667%;
+}
+
+.grid-card-12 {
+  width: 100%;
+}
+
+[class^=grid-card] {
+  height: var(--height-card);
+  box-shadow: 0px 5px 5px gray;
+  text-align: center;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=output.css.map */
