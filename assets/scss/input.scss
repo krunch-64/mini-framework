@@ -1,7 +1,7 @@
 // On importe le fichier variable
 @import 'variable';
 
-
+// Bouton
 .btn {
     border: 0px;
     border-radius: 15px;
@@ -35,4 +35,5 @@
 }
 .btn-small {
     padding: var(--paddingbtn);
+
 }
