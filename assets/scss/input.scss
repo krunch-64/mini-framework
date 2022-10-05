@@ -1,19 +1,22 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
 @import 'variable';
 
-body {
-    background-color: $green;
-    @mixin media($width) {
-        @media only screen and (max-width: $width) {
-          @content;
-        }
+.card {
+    @include mobile {
+        --width-card: 300px;
+        --height-card: 400px;
       }
-    
-      @include media(700px) {
-        background: red;
+    @include tablet {
+        --width-card: 400px;
+        --height-card: 500px;
       }
+      @include desktop {
+        --width-card: 500px;
+        --height-card: 600px;
+      }
+  
 }
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
 
 // police d'écriture 
 body {
@@ -22,12 +25,12 @@ body {
 
 // paramétre de la carte
 .card{
-    width: 300px; // a changer avec la variable width
-    height: 500px; // a changer avec la variable height
+    width: var(--width-card);
+    height: var(--height-card);
     box-shadow: 0px 5px 5px gray;
 
     .card-img{
-        width: 300px; // a changer avec la variable width
+        width: var(--width-card);
     }
     
     .card-title , .card-text , .btn{

@@ -1,12 +1,92 @@
-
-body {
-  background-color: #008000;
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
+:root .btn {
+  --paddingbtn: 5px;
+  --backgroundcolorhover: rgb(190, 190, 190);
 }
-@media only screen and (max-width: 700px) {
-  body {
-    background: red;
+:root .btn__primary {
+  --backgroundcolor: lightblue;
+  --backgroundcolorhover: rgb(111, 185, 209);
+  --paddingbtn: 15px;
+}
+:root .btn__secondary {
+  --backgroundcolor: rgb(146, 158, 156);
+  --backgroundcolorhover: rgb(118, 128, 126);
+  --paddingbtn: 10px;
+}
+:root .btn-big {
+  --paddingbtn: 15px;
+}
+:root .btn-small {
+  --paddingbtn: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  .card {
+    --width-card: 300px;
+    --height-card: 400px;
+  }
+}
+@media screen and (min-width: 600px) {
+  .card {
+    --width-card: 400px;
+    --height-card: 500px;
+  }
+}
+@media screen and (min-width: 800px) {
+  .card {
+    --width-card: 500px;
+    --height-card: 600px;
   }
 }
 
-/*# sourceMappingURL=output.css.map */
+body {
+  font-family: "Ubuntu", sans-serif;
+}
 
+.card {
+  width: var(--width-card);
+  height: var(--height-card);
+  box-shadow: 0px 5px 5px gray;
+}
+.card .card-img {
+  width: var(--width-card);
+}
+.card .card-title, .card .card-text, .card .btn {
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  border: 0px;
+  border-radius: 15px;
+  padding: var(--paddingbtn);
+}
+.btn:hover {
+  background-color: var(--backgroundcolorhover);
+}
+.btn__primary {
+  background-color: var(--backgroundcolor, white);
+  padding: var(--paddingbtn);
+}
+.btn__primary:hover {
+  background-color: var(--backgroundcolorhover);
+  color: white;
+}
+.btn__secondary {
+  background-color: var(--backgroundcolor, white);
+  padding: var(--paddingbtn);
+}
+.btn__secondary:hover {
+  background-color: var(--backgroundcolorhover);
+  color: white;
+}
+
+.btn-big {
+  padding: var(--paddingbtn);
+}
+
+.btn-small {
+  padding: var(--paddingbtn);
+}
+
+/*# sourceMappingURL=output.css.map */
