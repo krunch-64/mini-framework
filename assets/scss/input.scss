@@ -1,18 +1,36 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
 @import "variable";
+// TEST
+.container {
+  margin: 5%;
+}
 
-  @include mobile {
-    --width-card: 300px;
-    --height-card: 400px;
-  }
-  @include tablet {
-    --width-card: 400px;
-    --height-card: 500px;
-  }
-  @include desktop {
-    --width-card: 500px;
-    --height-card: 600px;
-  }
+.grid {
+  // max-width: 200px;
+  // margin: 0 auto;
+  display: grid;
+  gap: 10px;
+}
+// .card {
+//   @include mobile {
+//     --width-card: 300px;
+//     --height-card: 400px;
+//   }
+//   @include tablet {
+//     --width-card: 400px;
+//     --height-card: 500px;
+//   }
+//   @include desktop {
+//     --width-card: 500px;
+//     --height-card: 600px;
+//   }
+// }
+@media (min-width: 600px) {
+  .grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (min-width: 900px) {
+  .grid { grid-template-columns: repeat(4, 1fr); }
 }
 
 // police d'écriture
@@ -22,17 +40,23 @@ body {
 
 // paramétre de la carte
 .card {
-   width: var(--width-card);
-   height: var(--height-card);
+  max-width: 200px;
+  //  width: var(--width-card);
+  //  height: var(--height-card);
    box-shadow: 0px 5px 5px gray;
    text-align: center;
    text-decoration: none;
+  // background-color: dodgerblue;
+  // color: white;
+  padding: 5%;
+  // height: 4rem;
 
   .card-img {
-    width: var(--width-card);
+    // width: var(--width-card);
+    width: auto;
     height: auto;
-    max-width: var(--width-card);
-    height: auto;
+    max-width: 500px;
+    // height: auto;
     overflow: hidden;
   }
   .card-text , .card-title , .grid-card{

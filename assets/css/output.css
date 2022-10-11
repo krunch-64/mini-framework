@@ -20,48 +20,43 @@
   --paddingbtn: 10px;
 }
 
-@media screen and (max-width: 600px) {
-  .card {
-    --width-card: 300px;
-    --height-card: 400px;
-  }
-}
-@media screen and (min-width: 600px) {
-  .card {
-    --width-card: 400px;
-    --height-card: 500px;
-  }
-}
-@media screen and (min-width: 800px) {
-  .card {
-    --width-card: 500px;
-    --height-card: 600px;
-  }
+.container {
+  margin: 5%;
 }
 
+.grid {
+  display: grid;
+  gap: 10px;
+}
+
+@media (min-width: 600px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 900px) {
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
 body {
   font-family: "Ubuntu", sans-serif;
 }
 
 .card {
-  width: var(--width-card);
-  height: var(--height-card);
+  max-width: 200px;
   box-shadow: 0px 5px 5px gray;
   text-align: center;
   text-decoration: none;
-  overflow: hidden;
+  padding: 5%;
 }
 .card .card-img {
-  max-width: var(--width-card);
+  width: auto;
   height: auto;
+  max-width: 500px;
   overflow: hidden;
 }
-
-.card-text {
-  word-wrap: break-word;
-}
-
-.card-title {
+.card .card-text, .card .card-title, .card .grid-card {
   word-wrap: break-word;
 }
 
@@ -151,6 +146,8 @@ body {
   box-shadow: 0px 5px 5px gray;
   text-align: center;
   text-decoration: none;
+  height: auto;
+  overflow: hidden;
 }
 
 .red {
