@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Chicle&display=swap');
 @import "variable";
 // TEST
@@ -35,9 +36,18 @@
 
 // police d'écriture
 body {
-  font-family: 'Chicle', cursive;
+  font-family: "Ubuntu", sans-serif;
+  background-image: url(../image/abstract-1301930.svg);
+  background-size: cover;
 }
-
+h1 {
+  font-family: 'Chicle', cursive; 
+  display: flex;
+  justify-content: center;
+  color: white; 
+  font-size: 150px; 
+  text-decoration: underline;
+}
 // paramétre de la carte
 .card {
   max-width: 200px;
@@ -139,4 +149,7 @@ $grid-columuns: 12;
 
 .white {
     background-color: $white;
+} 
+.yellow {
+  background-color: $yellow;
 }
