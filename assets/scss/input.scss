@@ -1,31 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Chicle&display=swap');
 @import "variable";
-// TEST
+
+
 .container {
   margin: 5%;
 }
-
+// paramètre de la mise en page
 .grid {
   // max-width: 200px;
   // margin: 0 auto;
   display: grid;
   gap: 10px;
 }
-// .card {
-//   @include mobile {
-//     --width-card: 300px;
-//     --height-card: 400px;
-//   }
-//   @include tablet {
-//     --width-card: 400px;
-//     --height-card: 500px;
-//   }
-//   @include desktop {
-//     --width-card: 500px;
-//     --height-card: 600px;
-//   }
-// }
+
 @media (min-width: 600px) {
   .grid { grid-template-columns: repeat(2, 1fr); }
 }
@@ -40,6 +28,8 @@ body {
   background-image: url(../image/abstract-1301930.svg);
   background-size: cover;
 }
+
+// design du titre
 h1 {
   font-family: 'Chicle', cursive; 
   display: flex;
@@ -48,6 +38,7 @@ h1 {
   font-size: 150px; 
   text-decoration: underline;
 }
+
 // paramétre de la carte
 .card {
   max-width: 200px;
@@ -56,10 +47,7 @@ h1 {
    box-shadow: 0px 5px 5px gray;
    text-align: center;
    text-decoration: none;
-  // background-color: dodgerblue;
-  // color: white;
   padding: 5%;
-  // height: 4rem;
 
   .card-img {
     // width: var(--width-card);
@@ -111,7 +99,7 @@ h1 {
   padding: var(--paddingbtn);
 }
 
-// la boucle
+// la boucle pour gérer les tailles des cartes 
 $grid-columuns: 12;
 
 @for $i from 1 through $grid-columuns {
@@ -128,28 +116,3 @@ $grid-columuns: 12;
     overflow: hidden;
 }
 
-// les couleurs
-
-.red {
-    background-color: $red;
-}
-
-.green {
-    background-color: $green;
-}
-
-.blue {
-    background-color: $blue;
-}
-
-.black {
-    background-color: $black;
-    color: $white;
-}
-
-.white {
-    background-color: $white;
-} 
-.yellow {
-  background-color: $yellow;
-}

@@ -21,6 +21,31 @@
   --paddingbtn: 10px;
 }
 
+.red {
+  background-color: #FF0000;
+}
+
+.green {
+  background-color: #008000;
+}
+
+.blue {
+  background-color: #0000FF;
+}
+
+.black {
+  background-color: #000000;
+  color: #fff;
+}
+
+.white {
+  background-color: #fff;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
 .container {
   margin: 5%;
 }
@@ -160,31 +185,6 @@ h1 {
   text-decoration: none;
   height: auto;
   overflow: hidden;
-}
-
-.red {
-  background-color: #FF0000;
-}
-
-.green {
-  background-color: #008000;
-}
-
-.blue {
-  background-color: #0000FF;
-}
-
-.black {
-  background-color: #000000;
-  color: #fff;
-}
-
-.white {
-  background-color: #fff;
-}
-
-.yellow {
-  background-color: yellow;
 }
 
 /*# sourceMappingURL=output.css.map */
