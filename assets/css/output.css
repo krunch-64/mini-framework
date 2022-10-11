@@ -20,19 +20,6 @@
   --paddingbtn: 10px;
 }
 
-body {
-  font-family: "Ubuntu", sans-serif;
-}
-
-.card {
-  width: var(--width-card);
-  height: var(--height-card);
-  box-shadow: 0px 5px 5px gray;
-  text-align: center;
-}
-.card .card-img {
-  width: var(--width-card);
-}
 @media screen and (max-width: 600px) {
   .card {
     --width-card: 300px;
@@ -52,13 +39,45 @@ body {
   }
 }
 
-.btn {
+body {
+  font-family: "Ubuntu", sans-serif;
+}
+
+.card {
+  width: var(--width-card);
+  height: var(--height-card);
+  box-shadow: 0px 5px 5px gray;
+  text-align: center;
   text-decoration: none;
-  color: #000000;
+  overflow: hidden;
+}
+.card .card-img {
+  max-width: var(--width-card);
+  height: auto;
+  overflow: hidden;
+}
+
+.card-text {
+  word-wrap: break-word;
+}
+
+.card-title {
+  word-wrap: break-word;
+}
+
+.btn {
+  border: 0px;
   border-radius: 15px;
   padding: var(--paddingbtn);
 }
 .btn:hover {
+  background-color: var(--backgroundcolorhover);
+}
+.btn__primary {
+  background-color: var(--backgroundcolor, white);
+  padding: var(--paddingbtn);
+}
+.btn__primary:hover {
   background-color: var(--backgroundcolorhover);
   color: white;
 }
@@ -79,13 +98,80 @@ body {
   padding: var(--paddingbtn);
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-column-gap: 5px;
-  grid-row-gap: 0px;
-  grid-auto-flow: row;
+.grid-card-1 {
+  width: 8.3333333333%;
+}
+
+.grid-card-2 {
+  width: 16.6666666667%;
+}
+
+.grid-card-3 {
+  width: 25%;
+}
+
+.grid-card-4 {
+  width: 33.3333333333%;
+}
+
+.grid-card-5 {
+  width: 41.6666666667%;
+}
+
+.grid-card-6 {
+  width: 50%;
+}
+
+.grid-card-7 {
+  width: 58.3333333333%;
+}
+
+.grid-card-8 {
+  width: 66.6666666667%;
+}
+
+.grid-card-9 {
+  width: 75%;
+}
+
+.grid-card-10 {
+  width: 83.3333333333%;
+}
+
+.grid-card-11 {
+  width: 91.6666666667%;
+}
+
+.grid-card-12 {
+  width: 100%;
+}
+
+[class^=grid-card] {
+  height: var(--height-card);
+  box-shadow: 0px 5px 5px gray;
+  text-align: center;
+  text-decoration: none;
+}
+
+.red {
+  background-color: #FF0000;
+}
+
+.green {
+  background-color: #008000;
+}
+
+.blue {
+  background-color: #0000FF;
+}
+
+.black {
+  background-color: #000000;
+  color: #fff;
+}
+
+.white {
+  background-color: #fff;
 }
 
 /*# sourceMappingURL=output.css.map */
